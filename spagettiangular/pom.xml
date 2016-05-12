@@ -1,0 +1,45 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<groupId>inc.damage</groupId>
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>spagettiangular</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+<!-- See https://spagettikoodi.wordpress.com/2016/01/17/angular-2-aloitusopas/ for how to use -->
+<!-- apm install atom-terminal-panel -->
+<!--  -->
+<!-- Just press shift-enter or just Ctrl + ` (control + backtick) and enjoy your cool ATOM terminal :D Try pressing the ctrl in the terminal for dynamic suggestions list! -->
+<!--  apm install terminal-plus -->
+<!-- https://atom.io/packages/atom-terminal-panel -->
+<!-- alt+shif+t for new terminal -->
+<!-- Create a new terminal instance: alt-shift-t / cmd-shif-t (more: https://atom.io/packages/terminal-plus) -->
+<!--  npm init -->
+<!-- npm install --save angular2@2.0.0-alpha.32 es6-promise es6-shim@0.33.3 reflect-metadata@0.1.2 rxjs@5.0.0-beta.0 zone.js systemjs -->
+<!-- npm install --save-dev concurrently lite-server typescript -->
+<build>
+<plugins>
+	<plugin>
+	  <groupId>com.github.eirslett</groupId>
+	  <artifactId>frontend-maven-plugin</artifactId>
+	  <version>0.0.26</version>
+	  <executions>
+		<execution>
+		  <id>install node and npm</id>
+		  <goals>
+			<goal>install-node-and-npm</goal>
+		  </goals>
+		  <configuration>
+			<nodeVersion>v5.3.0</nodeVersion>
+			<npmVersion>3.3.6</npmVersion>
+		  </configuration>
+		</execution>
+		<execution>
+		  <id>npm install</id>
+		  <goals>
+			<goal>npm</goal>
+		  </goals>
+		</execution>
+	  </executions>
+	</plugin>
+</plugins>
+</build>
+</project>
